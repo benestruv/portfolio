@@ -25,6 +25,7 @@ get_header() ?>
         <span href=<?php echo $img["url"] ?>>
         <img src=<?php echo $img["sizes"]["large"]; ?>  class="Aperçu du projet"/></span><br />
     </div>
+    
 </div>
 <?php endwhile;?>
 

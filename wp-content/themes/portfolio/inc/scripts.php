@@ -13,7 +13,7 @@ function portfolio_scripts() {
 
 
     // AJAX
-    wp_enqueue_script ('script', get_template_directory_uri().'/dist/js/main.js', array('jquery'), '1.0', true );
+    wp_enqueue_script ('script', get_template_directory_uri().'/js/main.js', array('jquery'), '1.0', true );
     wp_localize_script('script', 'ajaxurl', admin_url( 'admin-ajax.php' ) );
     // Burger Menu
     //wp_enqueue_script( 'burger-menu-script', get_stylesheet_directory_uri() . '/js/libs/burger-menu.js', array( 'jquery' ) );

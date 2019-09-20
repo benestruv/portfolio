@@ -19,7 +19,16 @@
             </div>
         </div>
     </footer>
-
+    
+    <!-- CDN et scripts -->
+        <!-- ScrollMagic -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+        <!-- ScrollMagic indicators plug in -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+        <!-- GSAP‘s TweenMax -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+        <!-- ScrollMagic GSAP animation -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
 
 <?php wp_footer() ?>
 
