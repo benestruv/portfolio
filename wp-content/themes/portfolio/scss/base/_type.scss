@@ -1,0 +1,86 @@
+// MONTSERRAT \\
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../fonts/Montserrat/Montserrat-Regular.ttf');
+
+}
+@font-face {
+  font-family: 'Montserrat-Light';
+  src: url('../../fonts/Montserrat/Montserrat-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('../../fonts/Montserrat/Montserrat-Bold.ttf');
+}
+
+// MULI  \\
+@font-face {
+  font-family: 'Muli';
+  src: url('../../fonts/Muli/Muli-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Muli-Light';
+  src: url('../../fonts/Muli/Muli-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Muli-Bold';
+  src: url('../../fonts/Muli/Muli-Bold.ttf');
+}
+
+
+
+// GENERAL \\
+body {
+  font-family: Muli, Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+
+nav {
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  li {
+    font-family: Montserrat-Bold, Verdana, Geneva, Tahoma, sans-serif;
+  }
+}
+
+.underline {
+  font-family: Montserrat-Bold, Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline;
+  margin: 0 auto;
+  border-bottom: 3px solid $corail;
+  padding: 0 0 0.3rem 0 !important;
+}
+
+h2, h3 {
+  text-transform: uppercase;
+  color: $turquoise-clair;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  padding-top: 1rem;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8rem;
+  padding-top: 1rem;
+}
+
+p {
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+}
+
+li {
+  font-family: Muli-Regular, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8rem;
+}

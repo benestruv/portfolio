@@ -1,0 +1,35 @@
+// ---------------------------------
+// HEADER
+// ---------------------------------
+
+.menu-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 1280px;
+    margin: 0 auto;
+    //position: fixed;
+}
+
+nav {
+  z-index: 100;
+  position: fixed;
+  display: flex;
+  .ico-menu {
+    margin-top: 0.5rem;
+    width: 75%;
+  }
+    .menu-item {
+      display: inline-block !important;
+        a {
+          color: white;
+          padding: 0 0 0.3rem 0 !important;
+          margin: 1rem;
+          border-bottom: 3px solid transparent;
+          transition-duration: 1s;
+          &:hover{
+            border-bottom: 3px solid $corail;
+            color: white;
+        }
+        }
+      }
+  }

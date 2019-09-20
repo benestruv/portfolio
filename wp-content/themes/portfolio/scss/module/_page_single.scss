@@ -1,0 +1,37 @@
+.single-container {
+    width: 1280px;
+    margin: 0 auto;
+    .realisation {
+        margin: 0 auto;
+        img {
+            // border: 1px solid white;
+            width: 100%;
+        }
+        .type {
+            font-size: 0.8rem;
+        }
+    
+    .details-projet {
+        display: flex;
+        flex-direction : row;
+        width: 1280px;
+        margin: 0 auto;
+        p {
+            font-size: 0.8rem;
+            letter-spacing: 0.1rem;
+        }
+        .titre-projet {
+            width: 40%;
+            padding: 3rem 2rem;
+            text-align: right;
+            background-color: rgba(0,0,0,0.2);
+        }
+        .description-projet {
+            width: 60%;
+            padding: 2rem;
+            background-color: rgba(0,0,0,0.4);
+        }
+    }
+    }
+}
+

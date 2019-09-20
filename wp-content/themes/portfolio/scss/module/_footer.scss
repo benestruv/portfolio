@@ -1,0 +1,35 @@
+// ---------------------------------
+// FOOTER
+// ---------------------------------  
+
+footer {
+    background-color: $turquoise-clair;
+    width: 100vw;
+    height: 2.5rem;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer-container {
+    max-width: 1280px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    font-family: Montserrat-Light, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8rem;
+    div {
+        padding-top: 0.7rem;
+        i {
+            padding-right: 1rem;
+            font-size: 1.1rem;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            &:hover {
+                color: $turquoise;
+            }
+        }
+    }
+}

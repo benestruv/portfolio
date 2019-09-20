@@ -1,0 +1,385 @@
+body {
+  background-color: #0F2224;
+  background: #193537 url(./../../img/background.png) no-repeat top center/cover;
+  background-attachment: fixed;
+}
+
+.btn {
+  margin: 2rem;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  border: 1px solid #56A6A8;
+  border-radius: 20px;
+  padding: 4px 8px;
+}
+.btn .tiret-corail {
+  color: #E5605A;
+}
+.btn a {
+  color: white;
+  text-decoration: none;
+}
+.btn a:hover {
+  color: #E5605A;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../fonts/Montserrat/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url("../../fonts/Montserrat/Montserrat-Light.ttf");
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../../fonts/Montserrat/Montserrat-Bold.ttf");
+}
+@font-face {
+  font-family: "Muli";
+  src: url("../../fonts/Muli/Muli-Regular.ttf");
+}
+@font-face {
+  font-family: "Muli-Light";
+  src: url("../../fonts/Muli/Muli-Light.ttf");
+}
+@font-face {
+  font-family: "Muli-Bold";
+  src: url("../../fonts/Muli/Muli-Bold.ttf");
+}
+body {
+  font-family: Muli, Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+
+nav {
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+nav li {
+  font-family: Montserrat-Bold, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.underline {
+  font-family: Montserrat-Bold, Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline;
+  margin: 0 auto;
+  border-bottom: 3px solid #E5605A;
+  padding: 0 0 0.3rem 0 !important;
+}
+
+h2, h3 {
+  text-transform: uppercase;
+  color: #56A6A8;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  padding-top: 1rem;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8rem;
+  padding-top: 1rem;
+}
+
+p {
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+}
+
+li {
+  font-family: Muli-Regular, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8rem;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 1280px;
+  margin: 0 auto;
+}
+
+nav {
+  z-index: 100;
+  position: fixed;
+  display: flex;
+}
+nav .ico-menu {
+  margin-top: 0.5rem;
+  width: 75%;
+}
+nav .menu-item {
+  display: inline-block !important;
+}
+nav .menu-item a {
+  color: white;
+  padding: 0 0 0.3rem 0 !important;
+  margin: 1rem;
+  border-bottom: 3px solid transparent;
+  transition-duration: 1s;
+}
+nav .menu-item a:hover {
+  border-bottom: 3px solid #E5605A;
+  color: white;
+}
+
+footer {
+  background-color: #56A6A8;
+  width: 100vw;
+  height: 2.5rem;
+  position: fixed;
+  bottom: 0;
+}
+
+.footer-container {
+  max-width: 1280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  font-family: Montserrat-Light, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8rem;
+}
+.footer-container div {
+  padding-top: 0.7rem;
+}
+.footer-container div i {
+  padding-right: 1rem;
+  font-size: 1.1rem;
+}
+.footer-container div a {
+  color: white;
+  text-decoration: none;
+}
+.footer-container div a:hover {
+  color: #0F2224;
+}
+
+.accueil-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  max-width: 1280px;
+  height: 80vh;
+  margin: 0 auto;
+}
+.accueil-container .hide {
+  display: none !important;
+}
+.accueil-container .profession {
+  font-family: Montserrat-Light, Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 0.73rem;
+  margin-top: 1rem;
+  width: 400px !important;
+}
+.accueil-container .accueil-gauche {
+  width: 50%;
+}
+.accueil-container .accueil-droit {
+  width: 50%;
+}
+
+.liste-realisations {
+  margin-bottom: 2rem;
+}
+.liste-realisations a {
+  color: white;
+  text-decoration: none;
+}
+.liste-realisations a:hover {
+  color: #56A6A8;
+}
+
+.realisations {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.realisations .realisation-gauche {
+  text-align: center;
+  width: 50%;
+}
+.realisations .realisation-gauche .btn-realisation {
+  margin-top: 4rem;
+}
+.realisations .realisation-droit {
+  width: 50%;
+  height: 100vh;
+  z-index: 0;
+}
+
+.images-additionnelles {
+  display: flex;
+  justify-content: space-around;
+  background-color: #0f2224;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%231f4448' fill-opacity='0.4'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+  margin-bottom: 6rem;
+}
+.images-additionnelles .image-additionnelle {
+  max-width: 33vw;
+}
+
+.single-container {
+  width: 1280px;
+  margin: 0 auto;
+}
+.single-container .realisation {
+  margin: 0 auto;
+}
+.single-container .realisation img {
+  width: 100%;
+}
+.single-container .realisation .type {
+  font-size: 0.8rem;
+}
+.single-container .realisation .details-projet {
+  display: flex;
+  flex-direction: row;
+  width: 1280px;
+  margin: 0 auto;
+}
+.single-container .realisation .details-projet p {
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+}
+.single-container .realisation .details-projet .titre-projet {
+  width: 40%;
+  padding: 3rem 2rem;
+  text-align: right;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.single-container .realisation .details-projet .description-projet {
+  width: 60%;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.cadre-noir-transparent-cv {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  width: 50vw;
+  height: 180vh;
+  z-index: -1;
+}
+
+.cv {
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  overflow-y: hidden;
+}
+.cv .cv-gauche, .cv .cv-droit {
+  width: 50%;
+}
+.cv .cv-gauche {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cv .cv-titre {
+  width: 100%;
+  text-align: center;
+  padding-top: 10rem;
+}
+.cv .coordonees {
+  padding-top: 2rem !important;
+}
+.cv .coordonees, .cv .apropos, .cv .formations, .cv .etudes, .cv .experiences, .cv .langage, .cv .logiciels, .cv .langues, .cv .hobbys {
+  width: 300px;
+  padding: 0 2rem 1rem 2rem;
+}
+.cv .coordonees p, .cv .apropos p, .cv .formations p, .cv .etudes p, .cv .experiences p, .cv .langage p, .cv .logiciels p, .cv .langues p, .cv .hobbys p {
+  font-family: Muli-Light, Verdana, Geneva, Tahoma, sans-serif;
+  display: inline;
+}
+.cv .coordonees ul, .cv .apropos ul, .cv .formations ul, .cv .etudes ul, .cv .experiences ul, .cv .langage ul, .cv .logiciels ul, .cv .langues ul, .cv .hobbys ul {
+  margin-left: -2.6rem;
+}
+.cv .coordonees ul li, .cv .apropos ul li, .cv .formations ul li, .cv .etudes ul li, .cv .experiences ul li, .cv .langage ul li, .cv .logiciels ul li, .cv .langues ul li, .cv .hobbys ul li {
+  list-style-type: none;
+}
+.cv .coordonees, .cv .formations, .cv .experiences, .cv .logiciels {
+  text-align: right;
+}
+.cv .hobbys {
+  padding-bottom: 6rem;
+  text-align: center;
+}
+.cv .photo-cv {
+  position: fixed;
+}
+.cv .separator {
+  color: #56A6A8;
+}
+.cv .langage-repeater {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.cv .langage-div {
+  padding-top: 1.5rem;
+  min-width: 50px;
+  text-align: center;
+}
+.cv .logo-langage {
+  max-width: 1.5rem;
+}
+
+.cadre-noir-transparent {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  width: 50vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1280px;
+  height: 100vh;
+  text-align: center;
+}
+.contact-container a {
+  color: white;
+}
+.contact-container a:hover {
+  color: #56A6A8;
+  text-decoration: none;
+}
+.contact-container .contact-gauche, .contact-container .contact-droit {
+  width: 50%;
+}
+.contact-container .space-top {
+  margin-top: 2rem !important;
+}
+.contact-container i {
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: white;
+}
+.contact-container i:hover {
+  color: #56A6A8;
+}
+
+/*# sourceMappingURL=main.css.map */

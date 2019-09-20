@@ -1,0 +1,80 @@
+// ---------------------------------
+// CV
+// ---------------------------------
+
+.cadre-noir-transparent-cv {
+    background-color: rgba(0,0,0,0.4);
+    position: absolute;
+    top: 0;
+    width: 50vw;
+    height: 180vh;
+    z-index: -1;
+}
+.cv {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    .cv-gauche, .cv-droit {
+        width: 50%;
+    }
+    .cv-gauche {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    .cv-titre {
+        width: 100%;
+        text-align: center;
+        padding-top: 10rem;
+    }
+    .coordonees {
+        padding-top: 2rem !important;
+    }
+    .coordonees, .apropos, .formations, .etudes, .experiences, .langage, .logiciels, .langues, .hobbys {
+        width: 300px;
+        padding: 0 2rem 1rem 2rem;
+        p {
+            font-family: Muli-Light, Verdana, Geneva, Tahoma, sans-serif;
+            display: inline;
+        }
+        ul {
+            margin-left: -2.6rem;
+            li {
+                list-style-type: none;
+    
+            }
+        }
+
+    }
+    .coordonees, .formations, .experiences, .logiciels {
+        text-align: right;
+    }
+
+    .hobbys {
+        padding-bottom: 6rem;
+        text-align: center;
+    }
+    .photo-cv {
+        position: fixed;
+    }
+    .separator {
+        color: $turquoise-clair;
+    }
+    .langage-repeater {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .langage-div {
+        padding-top: 1.5rem;
+        min-width: 50px;
+        text-align: center;
+    }
+    .logo-langage {
+        max-width: 1.5rem;
+    }
+}

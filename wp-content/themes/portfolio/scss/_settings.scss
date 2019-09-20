@@ -1,0 +1,33 @@
+// COULEURS //
+$turquoise : #0F2224;
+$turquoise-clair: #56A6A8;
+$fond: #193537;
+$corail : #E5605A;
+
+body {
+
+  background-color: $turquoise;
+  background: $fond url(./../../img/background.png) no-repeat top center / cover;
+  background-attachment: fixed;
+}
+
+.btn {
+  margin: 2rem;
+  .tiret-corail {
+      color: $corail;
+  }
+      font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+      letter-spacing: 0.1rem;
+      text-transform: uppercase;
+      font-size: 0.6rem;
+      border: 1px solid $turquoise-clair;
+      border-radius: 20px;
+      padding: 4px 8px;
+      a {
+          color: white;
+          text-decoration: none;
+          &:hover {
+              color: $corail;
+          }
+      }
+  }
