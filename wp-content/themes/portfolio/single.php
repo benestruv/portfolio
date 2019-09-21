@@ -12,7 +12,7 @@
     <!-- IMAGE -->
     <?php $img = get_field('image_du_projet', $projet->ID);?>
     <span href=<?php echo $img["url"] ?>>
-    <img src=<?php echo $img["sizes"]["large"]; ?>  class="Image du projet"/></span><br />
+    <img src=<?php echo $img["sizes"]["large"]; ?>  class="image-projet"/></span><br />
 
     <div class="details-projet">
       <div class="titre-projet">

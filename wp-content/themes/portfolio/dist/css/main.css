@@ -82,7 +82,6 @@ h2, h3 {
   font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1rem;
   padding-top: 1rem;
-  line-height: 2.5rem;
 }
 
 h4 {
@@ -100,6 +99,10 @@ p {
 li {
   font-family: Muli-Regular, Verdana, Geneva, Tahoma, sans-serif;
   font-size: 0.8rem;
+}
+
+.realisations h2 {
+  line-height: 2.5rem;
 }
 
 .menu-container {
@@ -172,7 +175,7 @@ footer {
   align-items: center;
   padding-top: 1rem;
   max-width: 1280px;
-  height: 80vh;
+  height: 100vh;
   margin: 0 auto;
 }
 .accueil-container .hide {
@@ -212,6 +215,11 @@ footer {
 .realisations .realisation-gauche {
   text-align: center;
   width: 50%;
+  height: 100vh;
+  background: #193537 url(./../../img/backgroundrealisation.png) no-repeat top center/cover;
+}
+.realisations .realisation-gauche h2 {
+  padding-top: 45%;
 }
 .realisations .realisation-gauche .btn-realisation {
   margin-top: 4rem;
@@ -280,7 +288,7 @@ footer {
   position: absolute;
   top: 0;
   width: 50vw;
-  height: 180vh;
+  height: 200vh;
   z-index: -1;
 }
 
@@ -298,7 +306,7 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .cv .cv-titre {
   width: 100%;
@@ -322,12 +330,8 @@ footer {
 .cv .coordonees ul li, .cv .apropos ul li, .cv .formations ul li, .cv .etudes ul li, .cv .experiences ul li, .cv .langage ul li, .cv .logiciels ul li, .cv .langues ul li, .cv .hobbys ul li {
   list-style-type: none;
 }
-.cv .coordonees, .cv .formations, .cv .experiences, .cv .logiciels {
-  text-align: right;
-}
 .cv .hobbys {
   padding-bottom: 6rem;
-  text-align: center;
 }
 .cv .photo-cv {
   position: fixed;

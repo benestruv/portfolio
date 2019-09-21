@@ -17,6 +17,11 @@
     .realisation-gauche {
         text-align: center;
         width: 50%;
+        height: 100vh;
+        background: $fond url(./../../img/backgroundrealisation.png) no-repeat top center / cover;
+        h2 {
+            padding-top: 45%;
+        }
         .btn-realisation {
             margin-top: 4rem;
         }

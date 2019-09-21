@@ -9,6 +9,7 @@ get_header() ?>
 
 <div class="accueil-container">
 
+
     <div class="gauche">
         <!-- LOGO & PROFESSION -->
         <div class="accueil-gauche">

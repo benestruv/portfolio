@@ -12,7 +12,7 @@ get_header() ?>
     <!-- CV -->
 
     <div class="cv-gauche">
-        <div class="cv-titre">
+        <div class="cv-titre stagger">
             <a href="/portfolio/accueil">
             <?php $img = get_field('logo', 5);?>
             <span href=<?php echo $img["url"] ?>>
@@ -21,7 +21,7 @@ get_header() ?>
         </div>
 
         <!-- Coordonnées -->
-        <div class="coordonees">
+        <div class="coordonees stagger">
             <p><?php the_field('date_de_naissance', 9) ?></p><br />
             <p><?php the_field('telephone', 9) ?></p><br />
             <p><?php the_field('adresse', 9) ?></p><br />
@@ -31,14 +31,14 @@ get_header() ?>
 
 
         <!-- A propos -->
-        <div class="apropos">
+        <div class="apropos stagger">
             <h2><?php the_field('titre_à_propos', 9) ?></h2>
             <p><?php the_field('texte_à_propos', 9) ?></p>
         </div>
 
 
         <!-- Formations -->
-        <div class="formations">
+        <div class="formations stagger">
             <h2><?php the_field('formations_titre', 9) ?></h2>
             <?php
                 if( have_rows('formation') ):
@@ -59,7 +59,7 @@ get_header() ?>
 
 
         <!-- Etudes -->
-        <div class="etudes">
+        <div class="etudes stagger">
             <h2><?php the_field('etude_titre', 9) ?></h2>
             <?php
                 if( have_rows('etudes') ):
@@ -81,7 +81,7 @@ get_header() ?>
 
 
         <!-- Expériences professionnelles -->
-        <div class="experiences">
+        <div class="experiences stagger">
             <h2><?php the_field('experience_pro_titre', 9) ?></h2>
             <?php
                 if( have_rows('experiences_professionnelles') ):
@@ -103,7 +103,7 @@ get_header() ?>
 
         <!-- Langages de programmation -->
 
-        <div class="langage">
+        <div class="langage stagger">
             <h2><?php the_field('langage_titre', 9) ?></h2>
             <div class="langage-repeater">
             <?php if( have_rows('langage_programmation') ): ?>
@@ -122,7 +122,7 @@ get_header() ?>
 
 
         <!-- Logiciels -->
-        <div class="logiciels">
+        <div class="logiciels stagger">
             <h2><?php the_field('logiciels_titre', 9) ?></h2>
             <?php
                 if( have_rows('logiciels') ):
@@ -138,7 +138,7 @@ get_header() ?>
         </div>
 
         <!-- Langues -->
-        <div class="langues">
+        <div class="langues stagger">
             <h2><?php the_field('langue_titre', 9) ?></h2>
             <?php
                 if( have_rows('langues') ):
@@ -156,7 +156,7 @@ get_header() ?>
 
 
         <!-- Hobbys -->
-        <div class="hobbys">
+        <div class="hobbys stagger">
             <h2><?php the_field('hobby_titre', 9) ?></h2>
             <?php
                 if( have_rows('hobbys') ):
