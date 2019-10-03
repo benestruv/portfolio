@@ -82,6 +82,7 @@ h2, h3 {
   font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1rem;
   padding-top: 1rem;
+  line-height: 2.2rem;
 }
 
 h4 {
@@ -125,6 +126,8 @@ nav .menu-item {
   display: inline-block !important;
 }
 nav .menu-item a {
+  display: inline !important;
+  padding-top: 1rem;
   color: white;
   padding: 0 0 0.3rem 0 !important;
   margin: 1rem;
@@ -136,7 +139,44 @@ nav .menu-item a:hover {
   color: white;
 }
 
+@media screen and (min-width: 641px) {
+  .menu-burger, .burger-button {
+    display: none;
+  }
+}
 @media screen and (min-width: 200px) and (max-width: 640px) {
+  .menu-container {
+    display: none;
+  }
+
+  .burger-button {
+    display: block;
+    color: white;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    z-index: 100;
+  }
+
+  #close-button {
+    z-index: 150;
+    display: block;
+    color: white;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    cursor: pointer;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+
   .menu-burger {
     z-index: 101;
     background: #193537 url(./../../img/background.png) no-repeat top center/cover;
@@ -149,14 +189,19 @@ nav .menu-item a:hover {
   .menu-burger .coord-menu-cv {
     font-family: Montserrat-Light, Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: 0.2rem;
-    padding-top: 3rem;
+    padding-top: 5rem;
+  }
+  .menu-burger ul {
+    padding-left: 0;
   }
   .menu-burger li {
     list-style-type: none;
     text-transform: uppercase;
+    margin-top: 1.5rem;
   }
   .menu-burger .menu-item a {
-    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+    display: inline;
+    font-family: Montserrat-Bold, Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: 0.2rem;
     color: white;
     padding: 0 0 0.3rem 0 !important;
@@ -169,15 +214,12 @@ nav .menu-item a:hover {
     border-bottom: 3px solid #E5605A;
     color: white;
   }
-
-  .menu-container {
-    display: flex;
-    justify-content: flex-end;
-    width: 100vw;
-    margin: 0 auto;
+  .menu-burger .sociaux-burger {
+    color: #E5605A;
+    font-size: 1.2rem;
   }
-  .menu-container .nav {
-    letter-spacing: 0px !important;
+  .menu-burger .sociaux-burger:hover {
+    color: #0F2224;
   }
 }
 footer {
@@ -214,16 +256,19 @@ footer {
 
 @media screen and (min-width: 200px) and (max-width: 640px) {
   footer {
-    height: 7rem;
+    height: 3rem;
   }
 
   .footer-container {
-    display: flex;
-    flex-direction: column !important;
     text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   .footer-container div {
     padding-bottom: 0.2rem;
+  }
+  .footer-container .footer-infos {
+    display: none;
   }
 }
 .accueil-container {
@@ -236,7 +281,7 @@ footer {
   height: 100vh;
   margin: 0 auto;
 }
-.accueil-container .hide {
+.accueil-container .hide-titre {
   display: none !important;
 }
 .accueil-container .profession {
@@ -257,8 +302,8 @@ footer {
 @media screen and (min-width: 200px) and (max-width: 640px) {
   .accueil-container {
     width: 320px;
-    display: block !important;
-    padding-top: 5rem;
+    flex-direction: column;
+    align-items: flex-start;
   }
   .accueil-container .logo {
     width: 300px;
@@ -429,6 +474,10 @@ footer {
 .cv .logo-langage {
   max-width: 1.5rem;
 }
+.cv .logo-print {
+  padding: 0;
+  margin: 0;
+}
 
 @media print {
   .cv-gauche {
@@ -473,6 +522,52 @@ footer {
     visibility: visible;
   }
 }
+@media screen and (min-width: 200px) and (max-width: 640px) {
+  .cadre-noir-transparent-cv {
+    display: none;
+  }
+
+  .cv {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 320px;
+    text-align: center;
+    font-size: 1rem;
+  }
+  .cv .langage-repeater {
+    justify-content: center;
+  }
+  .cv h2 {
+    padding: 0;
+  }
+  .cv .logo {
+    width: 320px;
+  }
+  .cv .metier {
+    font-size: 0.7rem;
+  }
+  .cv .logo-print {
+    display: none;
+  }
+  .cv .photo-cv {
+    max-width: 320px;
+    position: absolute;
+  }
+  .cv .cv-gauche {
+    width: 100% !important;
+    margin-top: 280px;
+  }
+  .cv .cv-droit {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: -160px;
+  }
+  .cv .coordonees {
+    margin-top: -5rem;
+  }
+}
 .cadre-noir-transparent {
   background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
@@ -512,6 +607,29 @@ footer {
 }
 .contact-container i:hover {
   color: #56A6A8;
+}
+
+@media screen and (min-width: 200px) and (max-width: 640px) {
+  .cadre-noir-transparent {
+    display: none;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contact-container .contact-gauche, .contact-container .contact-droit {
+    width: 80%;
+  }
+
+  .contact-gauche {
+    margin-top: 2rem;
+  }
+
+  .contact-droit {
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

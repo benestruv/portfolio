@@ -37,14 +37,17 @@ footer {
   // MEDIA QUERIES \\
   @media screen and (min-width: 200px) and (max-width: 640px) {
     footer {
-        height: 7rem;
+        height: 3rem;
     }
     .footer-container {
-      display: flex;
-      flex-direction: column !important;
       text-align: center;
+      padding-left: 1rem;
+      padding-right: 1rem;
       div {
           padding-bottom: 0.2rem;
+      }
+      .footer-infos {
+          display: none;
       }
     }
   }

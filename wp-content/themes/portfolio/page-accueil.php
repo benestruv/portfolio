@@ -19,7 +19,7 @@ get_header() ?>
                     <span href=<?php echo $img["url"] ?>>
                     <img src=<?php echo $img["sizes"]["large"]; ?>  class="logo"/></span>
             </div>
-            <h1 class="hide"><?php the_field('titre_du_site', 5) ?></h1>
+            <h1 class="hide-titre"><?php the_field('titre_du_site', 5) ?></h1>
             <p class="profession"><?php the_field('profession', 5) ?></p>
         </div>
     </div>

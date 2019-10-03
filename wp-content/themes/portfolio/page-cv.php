@@ -18,7 +18,7 @@ get_header() ?>
             <span href=<?php echo $img["url"] ?>>
             <img src=<?php echo $img["sizes"]["large"]; ?>  class="logo"/></span></a><br/>
             <p class="nom-cv">Bénédicte Struvay</p>
-            <h2><?php the_field('fonction_visee', 9) ?></h2><br/><br/>
+            <h2 class="metier"><?php the_field('fonction_visee', 9) ?></h2><br/><br/>
             <a href="#" onclick="javascript:window.print()"><h2 class="logo-print"><i class="fas fa-print"></i>  Imprimer le C.V.</h2></a>
         </div>
 

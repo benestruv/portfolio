@@ -76,6 +76,10 @@
     .logo-langage {
         max-width: 1.5rem;
     }
+    .logo-print {
+        padding: 0;
+        margin: 0;
+    }
 }
 
 // PRINT \\
@@ -116,3 +120,51 @@
         visibility: visible;
         }
   }
+
+  // MEDIA QUERIES \\
+@media screen and (min-width: 200px) and (max-width: 640px) {
+    .cadre-noir-transparent-cv {
+    display: none;
+    }
+    .cv {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 320px;
+        text-align: center;
+        font-size: 1rem;
+        .langage-repeater {
+            justify-content: center;
+        }
+        h2 {
+            padding: 0;
+        }
+        .logo {
+            width: 320px;
+        }
+        .metier {
+            font-size: 0.7rem;
+        }
+        .logo-print {
+            display: none;
+        }
+        .photo-cv {
+            max-width: 320px;
+            position: absolute;
+        }
+        .cv-gauche {
+            width: 100% !important;
+            margin-top: 280px;
+        }
+        .cv-droit {
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            left: -160px;
+        }
+        .coordonees {
+            margin-top: -5rem;
+        }
+    }
+
+}

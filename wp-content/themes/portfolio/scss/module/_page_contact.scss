@@ -44,3 +44,24 @@
     }
 }
 
+// MEDIA QUERIES \\
+@media screen and (min-width: 200px) and (max-width: 640px) {
+    .cadre-noir-transparent {
+    display: none;
+    }
+    .contact-container {
+        flex-direction: column;
+        justify-content: center;
+    .contact-gauche, .contact-droit {
+        width: 80%;
+    }
+    }
+    .contact-gauche {
+        margin-top: 2rem;
+    }
+    .contact-droit {
+        margin-top: 1rem;
+        margin-bottom: 5rem;
+    }
+
+}

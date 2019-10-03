@@ -21,6 +21,8 @@ nav {
     .menu-item {
       display: inline-block !important;
         a {
+          display: inline !important;
+          padding-top: 1rem;
           color: white;
           padding: 0 0 0.3rem 0 !important;
           margin: 1rem;
@@ -35,9 +37,48 @@ nav {
   }
 
   // MEDIA QUERIES \\
+  @media screen and (min-width: 641px) {
+    .menu-burger, .burger-button {
+      display: none;
+    }
+  }
   @media screen and (min-width: 200px) and (max-width: 640px) {
 
-    // MENU BURGER \\
+    // Cache le menu principal pour le remplacer par l'icone du burger menu \\
+    .menu-container {
+      display: none;
+    }
+    .burger-button {
+      display: block;
+      color: white;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      cursor: pointer;
+      z-index: 100;
+    }
+    #close-button {
+      z-index: 150;
+      display: block;
+      color: white;
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      cursor: pointer;
+    }
+    
+    // Classes d'affichage et masquage du menu
+
+    .hide {
+      display: none;
+    }
+
+    .show {
+      display: block;
+    }
+
+
+    // ECRAN MENU RESPONSIVE \\
     .menu-burger {
       z-index: 101;
       background: $fond url(./../../img/background.png) no-repeat top center / cover;
@@ -49,15 +90,20 @@ nav {
       .coord-menu-cv {
         font-family: Montserrat-Light, Verdana, Geneva, Tahoma, sans-serif;
         letter-spacing: 0.2rem;
-        padding-top: 3rem;
+        padding-top: 5rem;
+      }
+      ul {
+        padding-left: 0;
       }
       li {
         list-style-type: none;
         text-transform: uppercase;
+        margin-top: 1.5rem;
       }
       .menu-item {
           a {
-            font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+            display: inline;
+            font-family: Montserrat-Bold, Verdana, Geneva, Tahoma, sans-serif;
             letter-spacing: 0.2rem;
             color: white;
             padding: 0 0 0.3rem 0 !important;
@@ -71,22 +117,12 @@ nav {
           }
           }
         }
+        .sociaux-burger {
+            color: $corail;
+            font-size: 1.2rem;
+            &:hover {
+              color: $turquoise;
+            }
+        }
     }
-
-
-
-
-
-
-    .menu-container {
-      display: flex;
-      justify-content: flex-end;
-      width: 100vw;
-      margin: 0 auto;
-      .nav {
-        letter-spacing: 0px !important;
-      }
-      
-      //position: fixed;
-  }
   }

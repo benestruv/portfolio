@@ -1,3 +1,23 @@
+// Boutons
+// Menu burger
+
+
+
+    (function() {
+        // Affichage du menu responsive \\
+        document.getElementById("burger-button").addEventListener("click", function() {
+            document.getElementById("menu-burger").className = "menu-burger show";
+        });
+        // Fermeture du menu responsive \\
+        document.getElementById("close-button").addEventListener("click", function() {
+            document.getElementById("menu-burger").className = "menu-burger hide";
+        });
+    })();
+
+
+
+
+
 
 
 

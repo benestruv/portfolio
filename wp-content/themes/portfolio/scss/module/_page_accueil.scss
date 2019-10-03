@@ -7,7 +7,7 @@
     max-width: 1280px;
     height: 100vh;
     margin: 0 auto;
-    .hide {
+    .hide-titre {
         display: none !important;
     }
     .profession {
@@ -31,14 +31,17 @@
 
       .accueil-container {
           width: 320px;
-          display: block !important;
-          padding-top: 5rem;
+          flex-direction: column;
+          align-items: flex-start;
           .logo {
               width: 300px;
 
           }
           .profession {
               font-size: 0.6rem;
+          }
+          .accueil-gauche{
+              //text-align: center;
           }
           .accueil-droit img {
               width: 320px;

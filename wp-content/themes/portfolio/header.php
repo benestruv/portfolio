@@ -18,6 +18,9 @@
 
 
 <body <?php body_class(); ?>>
+    <!-- burger menu button -->
+
+    <a id="burger-button" class="burger-button"><i class="fas fa-bars burger-button"></i></a> <!--Bouton burger menu, remplace le menu si mobile-->
 
     <!-- navbar -->
     <div class="menu-container">
@@ -39,30 +42,30 @@
 
             </div>
         </nav>
-
-
-        <!-- burger menu -->
-    <div class="menu-burger">
-            <div class="menu-burger-nav1">
-                <?php
-                    $args = array(
-                        'theme_location' => 'menu',
-                        'menu_class' => 'menu',
-                        'walker' => new wp_bootstrap_navwalker() // Compatibilité bootstrap/wp
-                    );    
-                    wp_nav_menu( $args );
-                ?>
-            </div>
-            <div class="coord-menu-cv">
-                <p>0489/92.16.11</p>
-                <p>benedicte.struvay<br/>@gmail.com</p>
-                <a href="https://github.com/benestruv"><i class="fab fa-github"></i></a>
-                <a href="https://www.instagram.com/eivychan/?hl=fr"><i class="fab fa-instagram"></i></a><br />
-                <a href="https://www.linkedin.com/in/b%C3%A9n%C3%A9dicte-struvay-0859bb54/"><i class="fab fa-linkedin-in"></a></i>
-            </div>
-    
     </div>
-    
-    </div>
+    <!-- Menu responsive -->
+    <div id="menu-burger" class="menu-burger hide">
+        <!-- Bouton fermer -->
+        <i id="close-button" class="fas fa-times"></i>
+        <!-- MENU -->
+                <div class="menu-burger-nav1">
+                    <?php
+                        $args = array(
+                            'theme_location' => 'menu',
+                            'menu_class' => 'menu',
+                            'walker' => new wp_bootstrap_navwalker() // Compatibilité bootstrap/wp
+                        );    
+                        wp_nav_menu( $args );
+                    ?>
+                </div>
+                <div class="coord-menu-cv">
+                    <p>0489/92.16.11</p>
+                    <p>benedicte.struvay<br/>@gmail.com</p>
+                    <a href="https://github.com/benestruv" class="sociaux-burger"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/eivychan/?hl=fr" class="sociaux-burger"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/b%C3%A9n%C3%A9dicte-struvay-0859bb54/" class="sociaux-burger"><i class="fab fa-linkedin-in"></a></i>
+                </div>
+        
+        </div>
 </div>
 
