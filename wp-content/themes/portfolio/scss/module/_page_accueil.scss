@@ -26,3 +26,23 @@
     } 
 }
 
+  // MEDIA QUERIES \\
+  @media screen and (min-width: 200px) and (max-width: 640px) {
+
+      .accueil-container {
+          width: 320px;
+          display: block !important;
+          padding-top: 5rem;
+          .logo {
+              width: 300px;
+
+          }
+          .profession {
+              font-size: 0.6rem;
+          }
+          .accueil-droit img {
+              width: 320px;
+          }
+      }
+
+  }

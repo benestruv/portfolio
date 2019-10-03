@@ -2,7 +2,7 @@
 
 <div class="single-container">
   <div class="btn">
-    <a href="/portfolio/realisations"><span class="tiret-corail"> <i class="fas fa-arrow-left"></i> </span>Portfolio</a>
+    <a href="/realisations"><span class="tiret-corail"> <i class="fas fa-arrow-left"></i> </span>Portfolio</a>
   </div><br />
 
   <?php if (have_posts() ):?>

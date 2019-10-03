@@ -7,7 +7,7 @@
     position: absolute;
     top: 0;
     width: 50vw;
-    height: 200vh;
+    height: 250vh;
     z-index: -1;
 }
 .cv {
@@ -30,6 +30,9 @@
         width: 100%;
         text-align: center;
         padding-top: 10rem;
+        p {
+            visibility: hidden;
+        }
     }
     .coordonees {
         padding-top: 2rem !important;
@@ -74,3 +77,42 @@
         max-width: 1.5rem;
     }
 }
+
+// PRINT \\
+
+@media print {
+    .cv-gauche {
+        width: 70% !important;
+    }
+    .cv-droit {
+        width: 30% !important;
+    }
+    .menu-container, .footer-container {
+      visibility: hidden;
+    }
+    body {
+      font-size: 1.3rem !important;
+      color:black;
+    }
+
+    .photo-cv {
+        max-width: 200px;
+    }
+    .cv-titre p {
+        visibility: visible;
+        color: black;
+        font-size: 2rem;
+    }
+    .nom-cv {
+        visibility: visible;
+    }
+    .logo-print {
+        visibility: hidden;
+    }
+    img[alt] { 
+        font-size: 1.2rem;
+        color: black;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        visibility: visible;
+        }
+  }

@@ -33,10 +33,36 @@
                 ?>
             </div>
             <div class="nav2">
-                <a href="/portfolio"><img class="ico-menu" src="wp-content/themes/portfolio/img/favico.png"/></a>
+            <a href="/"><?php $img = get_field('icone_accueil', 5);?>
+                    <span href=<?php echo $img["url"] ?>>
+                    <img src=<?php echo $img["sizes"]["large"]; ?>  class="ico-menu"/></span></a>
 
             </div>
         </nav>
+
+
+        <!-- burger menu -->
+    <div class="menu-burger">
+            <div class="menu-burger-nav1">
+                <?php
+                    $args = array(
+                        'theme_location' => 'menu',
+                        'menu_class' => 'menu',
+                        'walker' => new wp_bootstrap_navwalker() // Compatibilité bootstrap/wp
+                    );    
+                    wp_nav_menu( $args );
+                ?>
+            </div>
+            <div class="coord-menu-cv">
+                <p>0489/92.16.11</p>
+                <p>benedicte.struvay<br/>@gmail.com</p>
+                <a href="https://github.com/benestruv"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/eivychan/?hl=fr"><i class="fab fa-instagram"></i></a><br />
+                <a href="https://www.linkedin.com/in/b%C3%A9n%C3%A9dicte-struvay-0859bb54/"><i class="fab fa-linkedin-in"></a></i>
+            </div>
+    
+    </div>
+    
     </div>
 </div>
 

@@ -33,3 +33,60 @@ nav {
         }
       }
   }
+
+  // MEDIA QUERIES \\
+  @media screen and (min-width: 200px) and (max-width: 640px) {
+
+    // MENU BURGER \\
+    .menu-burger {
+      z-index: 101;
+      background: $fond url(./../../img/background.png) no-repeat top center / cover;
+      width: 100vw;
+      height: 100vh;
+      padding-top: 50%;
+      position: fixed;
+      text-align: center;
+      .coord-menu-cv {
+        font-family: Montserrat-Light, Verdana, Geneva, Tahoma, sans-serif;
+        letter-spacing: 0.2rem;
+        padding-top: 3rem;
+      }
+      li {
+        list-style-type: none;
+        text-transform: uppercase;
+      }
+      .menu-item {
+          a {
+            font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+            letter-spacing: 0.2rem;
+            color: white;
+            padding: 0 0 0.3rem 0 !important;
+            margin: 1rem;
+            border-bottom: 3px solid transparent;
+            transition-duration: 1s;
+            text-transform: center;
+            &:hover{
+              border-bottom: 3px solid $corail;
+              color: white;
+          }
+          }
+        }
+    }
+
+
+
+
+
+
+    .menu-container {
+      display: flex;
+      justify-content: flex-end;
+      width: 100vw;
+      margin: 0 auto;
+      .nav {
+        letter-spacing: 0px !important;
+      }
+      
+      //position: fixed;
+  }
+  }

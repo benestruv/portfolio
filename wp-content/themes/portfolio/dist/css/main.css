@@ -136,6 +136,50 @@ nav .menu-item a:hover {
   color: white;
 }
 
+@media screen and (min-width: 200px) and (max-width: 640px) {
+  .menu-burger {
+    z-index: 101;
+    background: #193537 url(./../../img/background.png) no-repeat top center/cover;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 50%;
+    position: fixed;
+    text-align: center;
+  }
+  .menu-burger .coord-menu-cv {
+    font-family: Montserrat-Light, Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0.2rem;
+    padding-top: 3rem;
+  }
+  .menu-burger li {
+    list-style-type: none;
+    text-transform: uppercase;
+  }
+  .menu-burger .menu-item a {
+    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0.2rem;
+    color: white;
+    padding: 0 0 0.3rem 0 !important;
+    margin: 1rem;
+    border-bottom: 3px solid transparent;
+    transition-duration: 1s;
+    text-transform: center;
+  }
+  .menu-burger .menu-item a:hover {
+    border-bottom: 3px solid #E5605A;
+    color: white;
+  }
+
+  .menu-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+    margin: 0 auto;
+  }
+  .menu-container .nav {
+    letter-spacing: 0px !important;
+  }
+}
 footer {
   background-color: #56A6A8;
   width: 100vw;
@@ -168,6 +212,20 @@ footer {
   color: #0F2224;
 }
 
+@media screen and (min-width: 200px) and (max-width: 640px) {
+  footer {
+    height: 7rem;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column !important;
+    text-align: center;
+  }
+  .footer-container div {
+    padding-bottom: 0.2rem;
+  }
+}
 .accueil-container {
   display: flex;
   flex-direction: row;
@@ -196,6 +254,22 @@ footer {
   width: 50%;
 }
 
+@media screen and (min-width: 200px) and (max-width: 640px) {
+  .accueil-container {
+    width: 320px;
+    display: block !important;
+    padding-top: 5rem;
+  }
+  .accueil-container .logo {
+    width: 300px;
+  }
+  .accueil-container .profession {
+    font-size: 0.6rem;
+  }
+  .accueil-container .accueil-droit img {
+    width: 320px;
+  }
+}
 .liste-realisations {
   margin-bottom: 2rem;
 }
@@ -288,7 +362,7 @@ footer {
   position: absolute;
   top: 0;
   width: 50vw;
-  height: 200vh;
+  height: 250vh;
   z-index: -1;
 }
 
@@ -312,6 +386,9 @@ footer {
   width: 100%;
   text-align: center;
   padding-top: 10rem;
+}
+.cv .cv-titre p {
+  visibility: hidden;
 }
 .cv .coordonees {
   padding-top: 2rem !important;
@@ -353,6 +430,49 @@ footer {
   max-width: 1.5rem;
 }
 
+@media print {
+  .cv-gauche {
+    width: 70% !important;
+  }
+
+  .cv-droit {
+    width: 30% !important;
+  }
+
+  .menu-container, .footer-container {
+    visibility: hidden;
+  }
+
+  body {
+    font-size: 1.3rem !important;
+    color: black;
+  }
+
+  .photo-cv {
+    max-width: 200px;
+  }
+
+  .cv-titre p {
+    visibility: visible;
+    color: black;
+    font-size: 2rem;
+  }
+
+  .nom-cv {
+    visibility: visible;
+  }
+
+  .logo-print {
+    visibility: hidden;
+  }
+
+  img[alt] {
+    font-size: 1.2rem;
+    color: black;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    visibility: visible;
+  }
+}
 .cadre-noir-transparent {
   background-color: rgba(0, 0, 0, 0.4);
   position: absolute;

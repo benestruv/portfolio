@@ -33,3 +33,18 @@ footer {
         }
     }
 }
+
+  // MEDIA QUERIES \\
+  @media screen and (min-width: 200px) and (max-width: 640px) {
+    footer {
+        height: 7rem;
+    }
+    .footer-container {
+      display: flex;
+      flex-direction: column !important;
+      text-align: center;
+      div {
+          padding-bottom: 0.2rem;
+      }
+    }
+  }

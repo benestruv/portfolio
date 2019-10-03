@@ -17,7 +17,9 @@ get_header() ?>
             <?php $img = get_field('logo', 5);?>
             <span href=<?php echo $img["url"] ?>>
             <img src=<?php echo $img["sizes"]["large"]; ?>  class="logo"/></span></a><br/>
+            <p class="nom-cv">Bénédicte Struvay</p>
             <h2><?php the_field('fonction_visee', 9) ?></h2><br/><br/>
+            <a href="#" onclick="javascript:window.print()"><h2 class="logo-print"><i class="fas fa-print"></i>  Imprimer le C.V.</h2></a>
         </div>
 
         <!-- Coordonnées -->
@@ -112,7 +114,7 @@ get_header() ?>
                 // vars
                 $image = get_sub_field('logo_language_prog');?>
  
-                <div class="langage-div"><img src="<?php echo $image['url']; ?>" alt="Logo langage" class="logo-langage" title="<?php the_sub_field('nom_langage_prog'); ?>"/></div>
+                <div class="langage-div"><img src="<?php echo $image['url']; ?>" alt="<?php the_sub_field('nom_langage_prog'); ?>" class="logo-langage" title="<?php the_sub_field('nom_langage_prog'); ?>"/></div>
                 
 
                 <?php endwhile; ?>
