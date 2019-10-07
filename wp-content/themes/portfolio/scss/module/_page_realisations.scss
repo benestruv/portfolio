@@ -35,7 +35,57 @@
 
 }
 
-.test {
-    position: absolute;
-    bottom: 0;
+// NAVIGATION REALISATIONS \\
+
+.nav-circle {
+    font-size: 0.5rem;
+}
+.circle {
+    color: white;
+}
+.active {
+    color: $corail;
+}
+
+fieldset {
+    position: fixed;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+    left: 1rem;
+    z-index: 160;
+}
+
+// MEDIA QUERIES \\
+@media screen and (min-width: 200px) and (max-width: 640px) {
+    .realisations {
+        width: 100vw;
+        flex-direction: column-reverse;
+    }
+    .realisation-gauche {
+        width: 100% !important;
+        height: 50vh !important;
+        z-index: 10;
+        h2 {
+            padding-top: 4rem !important;
+            
+        }
+        a {
+            max-width: 80%;
+        }
+        .btn-realisation {
+            margin-top: 1rem !important;
+        }
+        
+    }
+    .realisation-droit {
+        width: 100% !important;
+        height: 50vh !important;
+        .apercu-projet {
+            width: 100vw;
+            margin-top: -20%;
+            z-index: 0;
+        }
+        
+
+    }
 }

@@ -4,6 +4,26 @@ Template name: Portfolio
  */
 
 get_header() ?>
+
+<form class="move">
+	<fieldset>
+		<a href="#sec1" class="circle"><p id="high1"><i class="fas fa-circle nav-circle"></i></p></a>
+		<a href="#sec2" class="circle"><p id="high2"><i class="fas fa-circle nav-circle"></i></p></a>
+		<a href="#sec3" class="circle"><p id="high3"><i class="fas fa-circle nav-circle"></i></p></a>
+        <a href="#sec4" class="circle"><p id="high4"><i class="fas fa-circle nav-circle"></i></p></a>
+        <a href="#sec5" class="circle"><p id="high5"><i class="fas fa-circle nav-circle"></i></p></a>
+        <a href="#sec6" class="circle"><p id="high6"><i class="fas fa-circle nav-circle"></i></p></a>
+        <a href="#sec7" class="circle"><p id="high7"><i class="fas fa-circle nav-circle"></i></p></a>
+        <a href="#sec8" class="circle"><p id="high8"><i class="fas fa-circle nav-circle"></i></p></a>
+        <!--<a href="#sec9" class="circle"><p id="high9"><i class="fas fa-circle nav-circle"></i></p></a>-->
+        <!--<a href="#sec10" class="circle"><p id="high10"><i class="fas fa-circle nav-circle"></i></p></a>-->
+	</fieldset>
+</form>
+
+
+
+
+
 <!--<div class="cadre-noir-transparent"></div>-->
 <?php 
     query_posts(array( 
@@ -13,7 +33,7 @@ get_header() ?>
 ?>
 <?php $count = 1; ?> <!-- initialisation du compteur -->
 <?php while (have_posts()) : the_post(); ?>
-<div class="realisations realisation<?php echo $count; ?>"><!-- Ajout du compteur à la classe -->
+<div class="realisations realisation<?php echo $count; ?> spacer s1" id="sec<?php echo $count; ?>"><!-- Ajout du compteur à la classe -->
     <div class="realisation-gauche"> 
         <h2 class="stagger2">Réalisation</h2>
         <h2 class="underline liste-realisations stagger2"><a href="<?php the_permalink() ?>"><?php the_field('nom_du_projet', $projet->ID) ?></a></h2><br />

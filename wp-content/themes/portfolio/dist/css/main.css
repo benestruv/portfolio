@@ -122,6 +122,9 @@ nav .ico-menu {
   margin-top: 0.5rem;
   width: 75%;
 }
+nav .menu {
+  margin-top: 1rem;
+}
 nav .menu-item {
   display: inline-block !important;
 }
@@ -150,11 +153,12 @@ nav .menu-item a:hover {
   }
 
   .burger-button {
+    position: fixed;
     display: block;
     color: white;
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: 10px;
+    right: 10px;
     cursor: pointer;
     z-index: 100;
   }
@@ -164,8 +168,8 @@ nav .menu-item a:hover {
     display: block;
     color: white;
     position: absolute;
-    top: 2rem;
-    right: 2rem;
+    top: 20px;
+    right: 25px;
     cursor: pointer;
   }
 
@@ -349,11 +353,57 @@ footer {
   z-index: 0;
 }
 
-.test {
-  position: absolute;
-  bottom: 0;
+.nav-circle {
+  font-size: 0.5rem;
 }
 
+.circle {
+  color: white;
+}
+
+.active {
+  color: #E5605A;
+}
+
+fieldset {
+  position: fixed;
+  margin-top: 50vh;
+  transform: translateY(-50%);
+  left: 1rem;
+  z-index: 160;
+}
+
+@media screen and (min-width: 200px) and (max-width: 640px) {
+  .realisations {
+    width: 100vw;
+    flex-direction: column-reverse;
+  }
+
+  .realisation-gauche {
+    width: 100% !important;
+    height: 50vh !important;
+    z-index: 10;
+  }
+  .realisation-gauche h2 {
+    padding-top: 4rem !important;
+  }
+  .realisation-gauche a {
+    max-width: 80%;
+  }
+  .realisation-gauche .btn-realisation {
+    margin-top: 1rem !important;
+  }
+
+  .realisation-droit {
+    width: 100% !important;
+    height: 50vh !important;
+  }
+  .realisation-droit .apercu-projet {
+    width: 100vw;
+    margin-top: -20%;
+    z-index: 0;
+  }
+}
 .single-container {
   width: 1280px;
   margin: 0 auto;
@@ -402,6 +452,30 @@ footer {
   max-height: 250px;
 }
 
+@media screen and (min-width: 200px) and (max-width: 640px) {
+  .single-container {
+    width: 100vw;
+  }
+  .single-container .details-projet {
+    width: 100vw !important;
+  }
+  .single-container .titre-projet {
+    width: 60% !important;
+    padding: 2rem 1rem !important;
+  }
+  .single-container .description-projet {
+    width: 40% !important;
+    padding: 2rem 1rem !important;
+  }
+  .single-container .images-additionnelles {
+    width: 100vw !important;
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+  .single-container .images-additionnelles img {
+    width: 100vw;
+  }
+}
 .cadre-noir-transparent-cv {
   background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
@@ -417,6 +491,15 @@ footer {
   display: flex;
   flex-direction: row;
   overflow-y: hidden;
+}
+.cv a {
+  font-family: Muli-Light, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8rem;
+  color: white !important;
+  text-decoration: none !important;
+}
+.cv a:hover {
+  color: #56A6A8 !important;
 }
 .cv .cv-gauche, .cv .cv-droit {
   width: 50%;
@@ -513,6 +596,13 @@ footer {
 
   .logo-print {
     visibility: hidden;
+  }
+  .logo-print a {
+    text-decoration: none;
+  }
+  .logo-print a:hover {
+    text-decoration: none;
+    color: #E5605A;
   }
 
   img[alt] {

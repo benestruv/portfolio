@@ -19,16 +19,21 @@ get_header() ?>
             <img src=<?php echo $img["sizes"]["large"]; ?>  class="logo"/></span></a><br/>
             <p class="nom-cv">Bénédicte Struvay</p>
             <h2 class="metier"><?php the_field('fonction_visee', 9) ?></h2><br/><br/>
-            <a href="#" onclick="javascript:window.print()"><h2 class="logo-print"><i class="fas fa-print"></i>  Imprimer le C.V.</h2></a>
-        </div>
+
+            <?php 
+            $file = get_field('cv_pdf');
+            if( $file ): ?>
+                <a href="<?php echo $file['url']; ?>"><h2 class="logo-print"><i class="fas fa-print"></i>  Version imprimable</h2></a>
+            <?php endif; ?>
+                    </div>
 
         <!-- Coordonnées -->
         <div class="coordonees stagger">
             <p><?php the_field('date_de_naissance', 9) ?></p><br />
             <p><?php the_field('telephone', 9) ?></p><br />
             <p><?php the_field('adresse', 9) ?></p><br />
-            <p><?php the_field('mail', 9) ?></p><br />
-            <p><?php the_field('url_site', 9) ?></p>
+            <a href="mailto:<?php the_field('mail', 9) ?>"><?php the_field('mail', 9) ?></a><br />
+            <a href="/"><?php the_field('url_site', 9) ?></a>
         </div>
 
 

@@ -50,3 +50,31 @@
 }
 }
 
+// MEDIA QUERIES \\
+@media screen and (min-width: 200px) and (max-width: 640px) {
+    .single-container {
+        width: 100vw;
+        .details-projet {
+            width: 100vw !important;
+        }
+        .titre-projet {
+            width: 60% !important;
+            padding: 2rem 1rem !important;
+        }
+        .description-projet {
+            width: 40% !important;
+            padding: 2rem 1rem !important;
+        }
+        .images-additionnelles {
+            width: 100vw !important;
+            flex-direction: column;
+            margin-bottom: 3rem;
+            img {
+                width: 100vw;
+            
+            }
+        }
+    }
+
+
+}
